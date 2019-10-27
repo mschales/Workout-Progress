@@ -1,0 +1,107 @@
+body {
+    background-color: #2a2a2e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    margin: auto;
+    overflow: visible;
+}
+
+.navigation {
+    position: relative;
+    display: grid;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    background-color: #38383d;
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #eeeeee;
+}
+
+/* TODO, ADD HEADER TITLE */
+.header {
+
+}
+
+
+.exercises-navigation {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    line-height: 24px;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(5, 200px);
+    justify-content: center;
+    padding: 9px 0 9px 0;
+}
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 24px;
+    background:#fff;
+    width: 80%;
+}
+
+.chart-title {
+    display: grid;
+    color: #444;
+    padding: 9px;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 24px;
+    margin-left: 64px;
+}
+
+.navigation-button {
+    text-align: center;
+    color: rgb(245, 245, 245);
+    background-color: #000000;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 9px;
+}
+
+.navigation-button:hover {
+    cursor: pointer;
+}
+
+.button.active {
+    border: 1px solid rgb(77, 77, 77);
+    color: rgb(196, 196, 196);
+    background-color: #000000;
+    padding: 9px;
+    margin: 9px;
+}
+
+@media only screen and  (max-width: 1260px) {
+    .exercises-navigation {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        line-height: 24px;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(4, 200px);
+        justify-content: center;
+        padding: 9px 0 9px 0;
+    }
+}
+
+@media only screen and  (max-width: 960px) {
+    .exercises-navigation {
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        line-height: 24px;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, 200px);
+        justify-content: center;
+        padding: 9px 0 9px 0;
+    }
+}
